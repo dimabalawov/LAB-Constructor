@@ -29,15 +29,15 @@ public:
         delete[]email;//явно освобождаем память при уничтожении объекта
         cout << "Destructor" << endl;
     }
-    void setEmail(const char* n)
+    void setEmail(const char* e)
     {
         if (email != nullptr)
         {
             cout << "Delete -> " << email << "..." << endl;
             delete[]email;
         }
-        email = new char[strlen(n) + 1];
-        strcpy_s(email, strlen(n) + 1, n);
+        email = new char[strlen(e) + 1];
+        strcpy_s(email, strlen(e) + 1, e);
     }
     void setName(const char* n)
     {
