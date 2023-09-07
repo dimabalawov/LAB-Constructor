@@ -100,4 +100,8 @@ int main()
 {
     Student b("Dima","dimabalawov@gmail.com", 20);
     b.print();
+    b.setEmail("dima@gmail.com");
+    b.setName("Oleg");
+    b.print();
+
 }
